@@ -12,7 +12,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: #1e3a8a; /* dark blue */
+    background-color: #1e3a8a;
     padding: 15px;
 }
 
@@ -32,7 +32,7 @@ body {
     transition: 0.3s;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .nav-menu a:hover {
     background-color: #2563eb;
     border-radius: 5px;
@@ -43,7 +43,6 @@ body {
     position: relative;
 }
 
-/* DROPDOWN MENU */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -52,17 +51,15 @@ body {
     top: 40px;
 }
 
-/* DROPDOWN ITEMS */
 .dropdown-menu li {
     list-style: none;
 }
 
-/* SHOW DROPDOWN */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
@@ -78,4 +75,54 @@ body {
 .content {
     padding: 40px;
     text-align: center;
+}
+
+/* CALCULATOR */
+.calculator-box {
+    background: #f3f4f6;
+    padding: 25px;
+    border-radius: 8px;
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.calculator-box label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.calculator-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.calc-btn {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.calc-btn:hover {
+    background: #2563eb;
+}
+
+.result-box {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 10px;
 }
