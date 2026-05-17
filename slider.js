@@ -46,3 +46,4 @@ function prevSlide() {
 
 // AUTO-SLIDE every 4 seconds
 setInterval(nextSlide, 4000);
+
