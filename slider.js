@@ -27,9 +27,9 @@
 let currentIndex = 0;
 
 function showSlide(index) {
-    const slides = $(".slide");          // jQuery selector
-    slides.removeClass("active");        // remove active from all
-    slides.eq(index).addClass("active"); // add active to selected slide
+    const slides = $(".slide");
+    slides.removeClass("active");
+    slides.eq(index).addClass("active");
 }
 
 function nextSlide() {
@@ -44,3 +44,5 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
+// AUTO-SLIDE every 4 seconds
+setInterval(nextSlide, 4000);
